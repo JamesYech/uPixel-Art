@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pixel Art maker</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Monoton" rel="stylesheet">
+</head>
+<body>
+
+    <div class=".container">
+        <div class="title">
+            PIXEL ART MAKER
+        </div>
+
+        <div class="controls">
+            <p>
+                Grid Height: <input type="text" id="grht" value=10 class="input">
+                Grid Width: <input type="text" id="grwd" value=10 class="input">
+                <button id="myButton">Change</button>
+            </p>
+            <p>
+                Tile Color
+                <input type="color" id="tile-color">
+                Background Color
+                <input type="color" id="background-color">
+            </p>
+        </div>
+
+        <div id="grid-cont" >
+            <div id="grid-box">
+                <!-- grid created here by js -->
+            </div>
+        </div>
+
+    </div>
+
+    <div class="hr-line"></div>
+
+    <script src="js/grid.js"></script>
+
+</body>
+</html>
