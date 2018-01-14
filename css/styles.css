@@ -1,65 +1,111 @@
+/*----- global/default settings -------------------------*/
 
-* {
-    margin: auto;
-    padding: 0;
-}
+    * {
+        margin: auto;
+        padding: 0;
+    }
 
-#grid-box {
-    grid-gap: 1px;
-    grid-auto-rows: 1em;
-    width: 100%;
-    display: grid;
-    padding: 0;
-    grid-template-columns: repeat(20, 1em);
-}
+    /*----- color reference -------------------------------*/
 
-#grid-box > div {
-    border-style: solid;
-    border-width: 1px;
-    border-color: black;
-    height: 1em;
-    width: 1em;
-}
+        /*
+        #90afc5
+        #336b87
+        #2a3132
+        #763626
+        */
 
-body {
-    margin: 0 auto;
-    max-width: 60em;
-    min-width: 350px;
-}
 
-.container {
-    width: 100%;
-    display: grid;
-}
+/*----- common ------------------------------------------*/
 
-.title {
-    font-family: 'Monoton', cursive, arial, sans-serif;
-    text-align: center;
-    font-size: 5em;
-    line-height: 1em;
-}
+    body {
+        margin: 0 auto;
+        max-width: 60em;
+        min-width: 850px;
+    }
 
-.controls {
-    text-align: center;
-    margin-bottom: .5em;
-}
+    p {
+        margin: .5em .5em;
+    }
 
-p {
-    margin: .5em .5em;
-}
+    .row {
+        width: 100%;
+        border-radius: 5px;
+    }
 
-#grid-cont {
-    margin:1em auto;
-    width: 100%;
-}
+    .container {
+        width: 100%;
+        display: grid;
+    }
 
-.hr-line {
-    background: #666;
-    height: 1px;
-    margin: 1.5em 0 5px;
-    width: 100%;
-}
 
-.input {
-    width: 40px;
-}
+/*----- header ------------------------------------------*/
+
+    .header {
+        background-color: #763626;
+        font-family: 'Monoton', cursive, arial, sans-serif;
+        text-align: center;
+        font-size: 5em;
+        line-height: 1em;
+        color: #90afc5;
+        letter-spacing: 1px;
+        display: flex;
+        padding: .25em 0;
+    }
+
+
+/*----- controls ----------------------------------------*/
+
+    .controls {
+        text-align: center;
+        background-color: #90afc5;
+        color: #2a3132;
+        border-radius: 5px 5px 0 0;
+        padding: .25em 0;
+        margin-top: .5em;
+    }
+
+    .controls__input {
+        width: 40px;
+    }
+
+
+/*----- grid area ---------------------------------------*/
+
+    .grid-cont {
+      background-color: #90afc5;
+      padding: .5em 0 1em;
+      box-sizing: border-box;
+      border-radius: 0 0 5px 5px ;
+      margin-bottom:  0.5em;
+    }
+
+    .grid-box {
+        grid-gap: 0;
+        grid-auto-rows: 1em;
+        width: 100%;
+        display: grid;
+        padding: 0;
+    }
+
+    .grid-box > div {
+        border-style: solid;
+        border-width: .5px;
+        border-color: black;
+        height: 1em;
+        width: 1em;
+    }
+
+
+/*----- footer ------------------------------------------*/
+
+    .footer {
+        background-color: #763626;
+        font-family: arial, sans-serif;
+        text-align: center;
+        font-size: 1em;
+        line-height: 1em;
+        color: #90afc5;
+        margin: .15em 0;
+        padding: .25em 0;
+
+    }

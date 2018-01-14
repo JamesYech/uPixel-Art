@@ -5,7 +5,7 @@ const gridLocation = document.getElementById('grid-cont');
 
 function setDefaults() {
     //Set color pickers -- has to be hex value
-    document.getElementById('background-color').value="#d3d3d3";
+    document.getElementById('background-color').value="#336b87";
     document.getElementById('tile-color').value="#f9f9f9";
 
     //set grid and tile colors to match pickers - as rgb
@@ -50,10 +50,12 @@ function buildGrid() {
         newGrid.appendChild(newDiv);
     }
 
-    var newGridWidth=gridWidth*1.067;
+    //var newGridWidth=gridWidth*1.067;
     newGrid.id="grid-box";
+    newGrid.classList.add("row");
+    newGrid.classList.add("grid-box");
     newGrid.style.gridTemplateColumns="repeat("+gridWidth+",1em)";
-    newGrid.style.width=newGridWidth+"em";
+    newGrid.style.width=gridWidth+"em";  //newGridWidth+"em";
     newGrid.addEventListener('click', toggleTileColor);
 
     gridLocation.appendChild(newGrid);
