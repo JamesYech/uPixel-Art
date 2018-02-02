@@ -93,5 +93,5 @@ function newWidth() {
 }
 
 //this jquery is visually slower than the js line
-//$(document).ready(setDefaults);
+//$(setDefaults);
 document.body.onload=setDefaults();
